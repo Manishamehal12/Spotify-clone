@@ -223,3 +223,118 @@ body{
     color: white;
     overflow-y: auto;
 }
+.home-categories{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.home-categories button{
+    background-color: #242424;
+    border-radius: 30px;
+    padding: 10px 18px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.home-categories button.active{
+    background-color: white;
+    color: black;
+}
+.home-categories button:not(.active):hover {
+    background-color: #333333;
+}
+.quick-playlists{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.quick-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #242424;
+    border-radius: 6px;
+    cursor: pointer;
+    overflow: hidden;
+    min-height: 54 px;
+    transition: background-color 0.3s ease;
+}
+.quick-card img{
+    width: 54px;
+    height: 54px;
+    object-fit: cover;
+    
+}
+.quick-card h3{
+    font-size: 14px;
+    color: white;
+    margin: 0;
+}
+.quick-card:hover{
+background-color: #333333;
+}
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.section-header h2 {
+    font-size: 24px;
+    color: white;
+}
+
+.section-header span {
+    font-size: 14px;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+.section-header span:hover{
+    text-decoration: underline;
+}
+.jump-back-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 28px;
+    margin-top: 22px;
+}
+
+.music-card {
+    min-width: 0;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.music-card:hover {
+    background-color: #242424;
+}
+
+.music-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.music-card h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.music-card p {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 1.5;
+}
