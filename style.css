@@ -210,6 +210,7 @@ body{
     gap: 8px;
     padding: 0 8px;
     height: calc(100vh - 150px);
+    align-items: stretch;
 }
 
 
@@ -259,7 +260,7 @@ body{
     border-radius: 6px;
     cursor: pointer;
     overflow: hidden;
-    min-height: 54 px;
+    min-height: 54px;
     transition: background-color 0.3s ease;
 }
 .quick-card img{
@@ -314,6 +315,7 @@ background-color: #333333;
 
 .music-card:hover {
     background-color: #242424;
+    text-decoration: underline;
 }
 
 .music-card img {
@@ -330,6 +332,7 @@ background-color: #333333;
     font-weight: 500;
     margin-top: 10px;
     line-height: 1.5;
+    
 }
 
 .music-card p {
@@ -337,4 +340,211 @@ background-color: #333333;
     font-size: 14px;
     margin-top: 5px;
     line-height: 1.5;
+    
+}
+.genre-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 28px;
+    margin-top: 22px;
+}
+
+.genre-card {
+    min-width: 0;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.genre-card:hover {
+    background-color: #242424;
+    text-decoration: underline;
+}
+
+.genre-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.genre-card h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 1.5;
+    
+}
+
+.genre-card p {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 1.5;
+    
+}
+.right-panel {
+    width: 300px;
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    flex-shrink: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+.now-playing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+.now-playing-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px;
+}
+.now-playing-header i {
+    color: #b3b3b3;
+    cursor: pointer;
+}
+.now-playing-content img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+.now-playing-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px;
+}
+.now-playing-content p {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-top: 5px;
+}
+.lyrics-preview {
+    background-color: #242424;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+
+.lyrics-preview h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.lyrics-preview p {
+    color: #b3b3b3;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.bottom-player {
+    height: 90px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+}
+.player-song {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 25%;
+}
+
+.player-song img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.player-song h4 {
+    font-size: 14px;
+    color: white;
+}
+
+.player-song p {
+    font-size: 12px;
+    color: #b3b3b3;
+    margin-top: 5px;
+}
+.player-controls {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.control-buttons i {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.control-buttons .fa-circle-play {
+    font-size: 24px;
+}
+
+.progress-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.progress-bar span {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.progress-track {
+    flex: 1;
+    height: 4px;
+    background-color: #535353;
+    border-radius: 10px;
+}
+.player-volume {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.player-volume i {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.volume-track {
+    width: 100px;
+    height: 4px;
+    background-color: #535353;
+    border-radius: 10px;
 }
